@@ -1,0 +1,16 @@
+luna16_data/*
+data_preproc/*
+patches/*
+models/*
+luna16/
+
+src/01_patch_sampler.py
+src/02_dataset.py
+src/03_train.py
+src/04_eval.py
+src/05_gradcam.py
+
+!luna16_data/.gitkeep
+!data_preproc/.gitkeep
+!patches/.gitkeep
+!models/.gitkeep

@@ -1,0 +1,13 @@
+# torch torchvision --index-url https://download.pytorch.org/whl/cu121
+numpy 
+pandas 
+scikit-image 
+scikit-learn 
+simpleitk 
+pydicom 
+tqdm 
+matplotlib 
+torchio 
+monai
+itkwidgets
+nilearn
