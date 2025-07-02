@@ -1,16 +1,16 @@
-# Automated Lung Nodule Detection in CT (LUNA16) with Custom 3D CNN & Grad-CAM
+# Explainable 3D CNN for Lung Nodule Detection in Chest CT
 
 This project implements a fully reproducible, modular pipeline for automated detection of pulmonary nodules in chest CT scans using the [LUNA16](https://luna16.grand-challenge.org/) dataset. The workflow features a custom 3D convolutional neural network (3D CNN) and integrated volumetric Grad-CAM explainability, designed for medical imaging research and rapid prototyping on GPU servers.
 
 ---
 
-## 🚀 Project Goal
+## Project Goal
 
 > **Detect lung nodules in 3D CT scans using a custom deep learning pipeline, with end-to-end preprocessing, model training, evaluation, and transparent visual explanations (Grad-CAM).**
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ALNDetection-CT/
 ├── luna16_data/         # Raw data: subsets/, masks/, annotations/
@@ -21,7 +21,7 @@ ALNDetection-CT/
 
 ---
 
-## 📝 Pipeline Overview
+## Pipeline Overview
 
 1. **Preprocessing** (`src/00_preprocess.py`):  
    - Load raw `.mhd` CT scans  

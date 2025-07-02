@@ -1,16 +1,20 @@
 luna16_data/*
-data_preproc/*
-patches/*
+data_preproc/masks/*
+data_preproc/volumes/*
+patches/train/*
+patches/val/*
 models/*
 luna16/
+luna16_data/download_data.sh
 
-src/01_patch_sampler.py
 src/02_dataset.py
 src/03_train.py
 src/04_eval.py
 src/05_gradcam.py
 
 !luna16_data/.gitkeep
-!data_preproc/.gitkeep
-!patches/.gitkeep
+!data_preproc/volumes/.gitkeep
+!data_preproc/masks/.gitkeep
+!patches/train/.gitkeep
+!patches/val/.gitkeep
 !models/.gitkeep

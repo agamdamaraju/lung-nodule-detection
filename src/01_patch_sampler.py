@@ -39,6 +39,7 @@ def main(args):
 
     for uid_path in tqdm(sorted(vol_dir.glob("*.npy"))):
         uid  = uid_path.stem
+        print(f"Processing scan: {uid}")
         vol  = np.load(uid_path)
         pos  = df[df.uid == uid]
 
