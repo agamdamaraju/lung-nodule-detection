@@ -7,8 +7,6 @@ models/*
 .luna16
 luna16_data/download_data.sh
 
-src/03_train.py
-src/04_eval.py
 src/05_gradcam.py
 
 !luna16_data/.gitkeep

@@ -60,7 +60,7 @@ $ python src/01_patch_sampler.py --labels data_preproc/labels_vox.csv \
     --vol-dir data_preproc/volumes --out-dir patches/train --neg-ratio 1
 
 # 3. Train model
-$ python src/03_train.py \
+$ python src/train.py \
     --train-csv patches/train/patch_map.csv \
     --val-csv   patches/val/patch_map.csv \
     --epochs 20 \    #if not tuning
@@ -68,8 +68,15 @@ $ python src/03_train.py \
     --tune 30 \      #Optional
     --timeout 10800  #Optional
 
+# 4. Eval
+$ python src/04_eval.py \
+      --csv  patches/val/patch_map.csv \     
+      --ckpt models/best_full/best.pth \    
+      --feat-mult 2.0 \
+      --plot-dir plots/val \
+      --out-csv  results/val_candidates.csv
 
-# 4. Generate Grad-CAM heatmap
+# 5. Generate Grad-CAM heatmap
 $ python src/05_gradcam.py --ckpt models/best.pth --patch patches/val/example_pos.npy
 ```
 ---
