@@ -31,7 +31,7 @@ ALNDetection-CT/
 2. **Patch Extraction** (`src/01_patch_sampler.py`):  
    - Generate balanced 3D patches around nodules and hard negatives
 
-3. **PyTorch Dataset** (`src/02_dataset.py`):  
+3. **PyTorch Dataset** (`src/dataset.py`):  
    - Modular patch loader with on-the-fly augmentation (torchio)
 
 4. **Model Training** (`src/03_train.py`):  
@@ -60,8 +60,14 @@ $ python src/01_patch_sampler.py --labels data_preproc/labels_vox.csv \
     --vol-dir data_preproc/volumes --out-dir patches/train --neg-ratio 1
 
 # 3. Train model
-$ python src/03_train.py --train-csv patches/train/patch_map.csv \
-    --val-csv patches/val/patch_map.csv --save-dir models
+$ python src/03_train.py \
+    --train-csv patches/train/patch_map.csv \
+    --val-csv   patches/val/patch_map.csv \
+    --epochs 20 \    #if not tuning
+    --save-dir models \
+    --tune 30 \      #Optional
+    --timeout 10800  #Optional
+
 
 # 4. Generate Grad-CAM heatmap
 $ python src/05_gradcam.py --ckpt models/best.pth --patch patches/val/example_pos.npy

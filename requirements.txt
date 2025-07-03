@@ -1,4 +1,7 @@
-# torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch 
+torchvision
 numpy 
 pandas 
 scikit-image 
@@ -11,3 +14,4 @@ torchio
 monai
 itkwidgets
 nilearn
+optuna

@@ -1,0 +1,10 @@
+{
+  "train_csv": "patches/train/patch_map.csv",
+  "val_csv":   "patches/val/patch_map.csv",
+  "save_dir":  "models/best",
+  "epochs":    30,
+  "batch":     16,
+  "lr":        0.0007066339,
+  "wd":        0.0079591221,
+  "feat_mult": 2.0
+}
