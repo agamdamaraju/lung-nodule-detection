@@ -12,13 +12,22 @@ This project implements a fully reproducible, modular pipeline for automated det
 
 ## Directory Structure
 
-ALNDetection-CT/
-├── luna16_data/         # Raw data: subsets/, masks/, annotations/
-├── data_preproc/        # Preprocessed volumes and labels
-├── patches/             # Positive/negative 64³ patches for training/validation
-├── models/              # Saved models/checkpoints
-└── src/                 # All scripts   
+#### ALNDetection-CT/
+#### ├── luna16_data/         # Raw data: subsets/, masks/, annotations/
+#### ├── data_preproc/        # Preprocessed volumes and labels
+#### ├── patches/             # Positive/negative 64³ patches for training/validation
+#### ├── models/              # Saved models/checkpoints
+#### └── src/                 # All scripts   
 
+---
+## Instructions
+
+For downloading the data, execute:
+```bash
+$ luna16_data/download_data.sh
+```
+
+Download and store the [models](https://drive.google.com/file/d/1J6gBrKX718Z7krtq6gy0pLIypQ6KaJif/view) in /models directory.
 ---
 
 ## Pipeline Overview
