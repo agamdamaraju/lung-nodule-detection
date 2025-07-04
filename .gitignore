@@ -5,11 +5,10 @@ patches/train/*
 patches/val/*
 models/*
 .luna16
-luna16_data/download_data.sh
-
+!luna16_data/download_data.sh
 !luna16_data/.gitkeep
 !data_preproc/volumes/.gitkeep
 !data_preproc/masks/.gitkeep
 !patches/train/.gitkeep
 !patches/val/.gitkeep
-!models/.gitkeep.luna16/
+!models/.gitkeep
