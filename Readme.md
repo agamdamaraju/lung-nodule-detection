@@ -27,7 +27,7 @@ For downloading the data, execute:
 $ luna16_data/download_data.sh
 ```
 
-Download and store the [models](https://drive.google.com/file/d/1J6gBrKX718Z7krtq6gy0pLIypQ6KaJif/view) in /models directory.
+##### Download and store the [models](https://drive.google.com/file/d/1J6gBrKX718Z7krtq6gy0pLIypQ6KaJif/view) in /models directory.
 ---
 
 ## Pipeline Overview
