@@ -7,8 +7,6 @@ models/*
 .luna16
 luna16_data/download_data.sh
 
-src/05_gradcam.py
-
 !luna16_data/.gitkeep
 !data_preproc/volumes/.gitkeep
 !data_preproc/masks/.gitkeep
