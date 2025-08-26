@@ -19,8 +19,8 @@ This project implements a fully reproducible, modular pipeline for automated det
 ######    ├── patches/             # Positive/negative 64³ patches for training/validation
 ######    ├── models/              # Saved models/checkpoints
 ######    └── src/                 # All scripts   
-</code>pre>
-</pre>code>
+</pre>
+</code>
 ---
 ## Instructions
 
