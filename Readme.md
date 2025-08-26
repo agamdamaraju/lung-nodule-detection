@@ -11,16 +11,15 @@ This project implements a fully reproducible, modular pipeline for automated det
 ---
 
 ## Directory Structure
-<pre>
-<code>
+```text
 ALNDetection-CT/
 ├── luna16_data/         # Raw data: subsets/, masks/, annotations/
 ├── data_preproc/        # Preprocessed volumes and labels
 ├── patches/             # Positive/negative 64³ patches for training/validation
 ├── models/              # Saved models/checkpoints
 └── src/                 # All scripts   
-</pre>
-</code>
+```
+
 ---
 ## Instructions
 
